@@ -103,7 +103,7 @@ section .title::after {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: rgb(154, 154, 154);
+    background: crimson;
 }
 
 .navbar .max-width {
@@ -127,10 +127,18 @@ section .title::after {
     color: #fff;
 }
 
+.menu {
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .navbar .menu li {
     list-style: none;
-    display: inline-block;
+    display: flex;
+
 }
+
 
 .navbar .menu li a {
     display: block;
@@ -258,9 +266,9 @@ section .title::after {
 }
 
 .about .about-content .left img {
-    height: 400px;
+    height: 500px;
     width: 400px;
-    object-fit: cover;
+
     border-radius: 6px;
 }
 
@@ -358,6 +366,30 @@ section .title::after {
 
 /* skills section styling */
 
+.s {
+    background: white;
+    color: black;
+    border: solid crimson;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 3px;
+    font-weight: 600;
+
+}
+
+.s:hover {
+    background: crimson;
+    color: white;
+    border: solid crimson;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 3px;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
 .skills .title::after {
     content: "what I know";
 }
@@ -446,14 +478,40 @@ section .title::after {
     width: 70%;
 }
 
-/* teams section styling */
+/* projects section styling */
+.btn {
+    background: white;
+    color: black;
+    border: solid crimson;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 600;
+    margin: 4px;
+
+}
+
+.btn:hover {
+    background: crimson;
+    color: white;
+    border: solid crimson;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 3px;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
+
 .teams .title::after {
     content: "My Latest Projects";
 }
 
-.box a {
+.box .a {
     text-decoration: none;
     font-size: 20px;
+    margin-bottom: 10px;
     color: rgb(143, 220, 20);
 }
 
