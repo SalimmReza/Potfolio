@@ -386,6 +386,7 @@ section .title::after {
     margin: 3px;
     font-weight: 600;
     font-size: 20px;
+    transition: all 0.5s ease;
 
 
 }
